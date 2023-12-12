@@ -240,6 +240,7 @@
 @media screen and (max-width: 768px){
     .main-container{
         width: 100%;
+        background-color: var(--white);
     }
     .desktop{
         display: none;
@@ -276,9 +277,21 @@
     .container h1{
         text-align: center;
     }
+
+    .back{
+        max-width: 1000px;
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+
 }
 
 @media screen and (max-width: 468px) {
+    .back button, .back p{
+        font-size: 14px;
+    }
+
     li, button, form{
         font-size: 14px;
     }
