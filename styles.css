@@ -68,6 +68,14 @@
     justify-content: center;
 }
 
+.desktop{
+    display: block;
+}
+
+.responsive{
+    display: none;
+}
+
 .list-item{
     margin: 10px 0 10px 0;
     display: flex;
@@ -195,4 +203,116 @@
     transition: all 0.7s; /*this does not work, i suppose that is because i am working with background images*/
     background-image: linear-gradient(to right, var(--tomato), var(--forGradient));
     box-shadow: 0px 5px 15px 3px var(--tomato); /* Ajusta los valores según tu preferencia */
+}
+
+@media screen and (max-width: 1140px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--charcoalGrey);
+    }
+
+    .main-container{
+        width: 90%;
+    }
+
+    .container2{
+        margin-right: -10px;
+    }
+
+    .container2 img{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container, .container2{
+        max-width: 80%;
+        margin: 0 2.5% 0 2.5%;
+    }
+
+    .container2{
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-container{
+        width: 100%;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .responsive{
+        display: flex;
+    }
+
+    .container2{
+        justify-content: center;
+        width: auto;
+        height: auto;
+        order: 1;
+    }
+
+    .container{
+        max-width: auto;
+        height: auto;
+        order: 2;
+    }
+
+    .front{
+        flex-direction: column;
+        height: 100vh;
+        max-width: auto;
+        border-radius: 0px;
+    }
+
+    .container ul, .container h1{
+        max-width: 365px;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    li, button, form{
+        font-size: 14px;
+    }
+
+    .list-item{
+        margin-left: 20px;
+    }
+
+    .container p{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .container2 img{
+        margin: -25px 0 0 0;
+    }
+
+    button, input{
+        max-width: 350px;
+    }
+
+    form{
+        margin-left: 0;
+    }
+
+    form p{
+        margin-left: 0;
+    }
+
+    .error span{
+        margin-left: 150px;
+    }
+
+    .flex-container p, .flex-container .error{
+        width: 150px;
+    }
 }

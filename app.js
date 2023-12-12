@@ -45,7 +45,6 @@ function checkForm(){
         .toLowerCase()
         .match(
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-    console.log(); // si le quito esto no devuelve ningún valor en el evento del initButton
     if (Array.isArray(output)){
         return true;
     } else {
