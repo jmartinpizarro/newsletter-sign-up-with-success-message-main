@@ -12,19 +12,31 @@
 
   <div class="main-container">
     <div class="front">
+      <div class="container">
       <h1>Stay updated!</h1>
 
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
       <ul>
-        <li><img src="./images/icon-list.svg" alt="a tick">Product discovery and building what matters</li>
-        <li><img src="./images/icon-list.svg" alt="a tick">Measuring to ensure updates are a success</li>
-        <li><img src="./images/icon-list.svg" alt="a tick">And much more!</li>
+        <li class="list-item"><img src="./images/icon-list.svg" alt="a tick">Product discovery and building what matters</li>
+        <li class="list-item"><img src="./images/icon-list.svg" alt="a tick">Measuring to ensure updates are a success</li>
+        <li class="list-item"><img src="./images/icon-list.svg" alt="a tick">And much more!</li>
       </ul>
 
-      <p>Email address</p>
-      <input type="email" name="email"> 
-      <button class="btn">Subscribe to monthly newsletter</button>
+
+      <form>
+        <div class="flex-container">
+          <p>Email address</p>
+          <span class="error">Valid email required</span>
+        </div>
+        <input type="email" name="email" id="email" placeholder="example@company.com" required> 
+        <button class="btn">Subscribe to monthly newsletter</button>
+      </form>
+      </div>
+
+      <div class="container2">
+        <img src="./images/illustration-sign-up-desktop.svg" alt="a really cool img">
+      </div>
     </div>
 
     <div class="back">
@@ -35,7 +47,7 @@
       <p>A confirmation email has been sent to <span id="toChange">xxx@email.com</span>. 
       Please open it and click the button inside to confirm your subscription.</p>
 
-      <button>Dismiss message</button>
+      <button class="btn-close">Dismiss message</button>
     </div>
 
   </div>

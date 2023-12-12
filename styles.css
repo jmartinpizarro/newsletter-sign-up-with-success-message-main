@@ -5,4 +5,191 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+:root{
+    --tomato: hsl(4, 100%, 67%);
+    --forGradient: rgba(254, 85, 114, 1);
+    --errorFormSpan:rgba(225, 121, 112, 1); 
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.main-container{
+    height: 100vh;
+    background-color: var(--charcoalGrey);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front{
+    width: 925px;
+    height: 640px;
+    background-color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border: none;
+    border-radius: 30px;
+}
+
+.container{
+    width: 400px;
+}
+
+.container h1{
+    font-size: 42px;
+    color: var(--darkSlateGrey);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.container p{
+    max-width: 360px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.container2{
+    margin-right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-item{
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-item img{
+    margin: 0 15px 0 0;
+    width: 20px;
+}
+
+.front form{
+    margin-top: 45px;
+}
+
+.front form p{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--darkSlateGrey);
+    margin-bottom: 15px;
+}
+
+.front form input{
+    text-indent: 25px;
+    height: 45px;
+    width: 375px;
+    font-size: 15px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+
+.front form input:focus{
+    outline: none;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.error{
+    font-weight: 700;
+    margin-left: 190px;
+    color: var(--errorFormSpan);
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.btn{
+    margin-top: 25px;
+    height: 55px;
+    width: 375px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--charcoalGrey), var(--charcoalGrey)); /* Color de fondo inicial */
+    transition: all 0.7s ; /* Transición para el color de fondo */
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.btn:hover{ 
+    transition: all 0.7s; /*this does not work, i suppose that is because i am working with background images*/
+    background-image: linear-gradient(to right, var(--tomato), var(--forGradient));
+    box-shadow: 0px 5px 15px 3px var(--tomato); /* Ajusta los valores según tu preferencia */
+}
+      
+.front{display: none;}
+
+.back{
+    width: 515px;
+    height: 515px;
+    background-color: var(--white);
+
+    border: none;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}   
+
+.back img{
+    margin: 65px 0 45px 65px; /*top right bottom left*/
+    width: 65px;
+}
+
+.back h1{
+    font-size: 40px;
+    color: var(--darkSlateGrey);
+    margin: 0px 0px 25px 65px;
+    max-width: 305px;
+}
+
+.back p{
+    max-width: 360px;
+    font-size: 16px;
+    margin: 0 0 45px 65px;
+}
+
+.back span{
+    font-weight: 700;
+}
+
+.btn-close{
+    margin: 0 0 55px 65px;
+    height: 55px;
+    width: 375px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--charcoalGrey), var(--charcoalGrey)); /* Color de fondo inicial */
+    transition: all 0.7s ; /* Transición para el color de fondo */
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.btn-close:hover{ 
+    transition: all 0.7s; /*this does not work, i suppose that is because i am working with background images*/
+    background-image: linear-gradient(to right, var(--tomato), var(--forGradient));
+    box-shadow: 0px 5px 15px 3px var(--tomato); /* Ajusta los valores según tu preferencia */
 }
